@@ -8,7 +8,7 @@ namespace LinkedList_Day_14
 {
     public class Node<T>
     {
-        T data;
+        public T data;
         public Node<T> next;
 
         public Node(T data)

@@ -25,5 +25,40 @@ namespace LinkedList_Day_14
                 addNode.next = temp;
             }
         }
+
+
+        public void append(T data)
+        {
+            Node<T> appendNode = new Node<T>(data);
+            if (head == null)
+            {
+                head = appendNode;
+                tail = appendNode;
+            }
+            else
+            {
+                tail.next = appendNode;
+                tail = tail.next;
+            }
+        }
+
+        public void show()
+        {
+            Node<T> temp = head;
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    Console.WriteLine(temp.data + " ");
+                    temp = temp.next;
+                }
+                Console.WriteLine();
+            }
+
+        }
     }
 }
