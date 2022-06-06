@@ -11,6 +11,7 @@ namespace LinkedList_Day_14
         public Node<T> head;
         public Node<T> tail;
 
+        //Adding the data at the previous position of the node
         public void add(T data)
         {
             Node<T> addNode = new Node<T>(data);
@@ -26,7 +27,7 @@ namespace LinkedList_Day_14
             }
         }
 
-
+        //Adding the data at the next position of the node.
         public void append(T data)
         {
             Node<T> appendNode = new Node<T>(data);
@@ -43,6 +44,7 @@ namespace LinkedList_Day_14
         }
 
 
+        //Inserting an data in between the nodes
         public void insertBetween(T one, T two, T middle)
         {
             Node<T> newNode = new Node<T>(middle);
@@ -57,6 +59,20 @@ namespace LinkedList_Day_14
                     break;
                 }
                 temp = temp.next;
+            }
+        }
+
+        //Deleting the first element from the linked list
+        public void pop()
+        {
+            Node<T> temp = head;
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else
+            {
+                head = temp.next;
             }
         }
 

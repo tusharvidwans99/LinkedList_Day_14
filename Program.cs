@@ -29,7 +29,10 @@
 
             //Inserting data in between 30&56
             linkedList.insertBetween(30, 56, 30);
+            linkedList.show();
 
+            //Deleting the first element from linkedlist
+            linkedList.pop();
             linkedList.show();
         }
     }
