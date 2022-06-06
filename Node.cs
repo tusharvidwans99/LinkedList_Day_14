@@ -9,7 +9,7 @@ namespace LinkedList_Day_14
     public class Node<T>
     {
         T data;
-        Node<T> next;
+        public Node<T> next;
 
         public Node(T data)
         {

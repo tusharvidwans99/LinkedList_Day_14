@@ -8,6 +8,11 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to this program in which we are doing operations on LinkedList");
+            LinkedList<int> linkedList = new LinkedList<int>();
+
+            linkedList.add(70);
+            linkedList.add(30);
+            linkedList.add(56);
 
         }
     }
