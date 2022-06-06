@@ -124,6 +124,34 @@ namespace LinkedList_Day_14
             return isPresent;
         }
 
+        //This method will insert the data after specific node.
+        public void insertAfter(T insertAfter, T insertData)
+        {
+            Node<T> temp = head;
+            Node<T> insertNode = new Node<T>(insertData);
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    if (temp.data.Equals(insertAfter))
+                    {
+                        Node<T> node = temp.next;
+                        temp.next = insertNode;
+                        insertNode.next = node;
+                        temp = node;
+                    }
+                    else
+                    {
+                        temp = temp.next;
+                    }
+                }
+            }
+        }
+
 
         //Printing the values in the linked list
         public void show()
