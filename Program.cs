@@ -25,6 +25,12 @@
             linkedList2.append(70);
 
             linkedList2.show();
+
+
+            //Inserting data in between 30&56
+            linkedList.insertBetween(30, 56, 30);
+
+            linkedList.show();
         }
     }
 }

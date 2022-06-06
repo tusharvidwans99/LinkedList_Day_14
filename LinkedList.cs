@@ -42,6 +42,24 @@ namespace LinkedList_Day_14
             }
         }
 
+
+        public void insertBetween(T one, T two, T middle)
+        {
+            Node<T> newNode = new Node<T>(middle);
+            Node<T> temp = head;
+            while (temp.next != null)
+            {
+                if ((temp.data.Equals(one) && temp.next.data.Equals(two)) || (temp.data.Equals(two) && temp.next.data.Equals(one)))
+                {
+                    Node<T> afterZ = temp.next;
+                    temp.next = newNode;
+                    temp.next.next = afterZ;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+
         public void show()
         {
             Node<T> temp = head;
