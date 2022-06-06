@@ -39,6 +39,9 @@
             //Deleting the last element from linkedlist2 70
             linkedList2.popLast();
             linkedList2.show();
+
+            //finding the node of value 30 in linkedlist2, will return true if finds the node or false if not present.
+            Console.WriteLine(linkedList2.search(30));
         }
     }
 }

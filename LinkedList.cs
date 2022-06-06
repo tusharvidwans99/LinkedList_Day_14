@@ -96,6 +96,34 @@ namespace LinkedList_Day_14
             }
         }
 
+        //This method will find the node using value.
+        public bool search(T data)
+        {
+            Node<T> temp = head;
+            bool isPresent = false;
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return false;
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    if (temp.data.Equals(data))
+                    {
+                        isPresent = true;
+                        break;
+                    }
+                    else
+                    {
+                        temp = temp.next;
+                    }
+                }
+            }
+            return isPresent;
+        }
+
 
         //Printing the values in the linked list
         public void show()
