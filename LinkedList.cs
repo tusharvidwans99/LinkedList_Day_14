@@ -152,6 +152,30 @@ namespace LinkedList_Day_14
             }
         }
 
+        //This method will delete the specific node in the linked list
+        public void deleteNode(T data)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            else
+            {
+                Node<T> temp = head;
+                if (head.data.Equals(data))
+                {
+                    head = head.next;
+                }
+                while (temp != null && temp.next != null)
+                {
+                    if (temp.next.data.Equals(data))
+                    {
+                        temp.next = temp.next.next;
+                    }
+                    temp = temp.next;
+                }
+            }
+        }
 
         //Printing the values in the linked list
         public void show()

@@ -52,6 +52,12 @@
             linkedList2.insertAfter(30, 40);
             Console.WriteLine("Linked List2");
             linkedList2.show();
+
+
+            //deleting the specific node from linkedlist2.
+            linkedList2.deleteNode(30);
+            Console.WriteLine("Linked List2");
+            linkedList2.show();
         }
     }
 }
