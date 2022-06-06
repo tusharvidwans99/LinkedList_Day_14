@@ -31,9 +31,14 @@
             linkedList.insertBetween(30, 56, 30);
             linkedList.show();
 
-            //Deleting the first element from linkedlist
+            //Deleting the first element from linkedlist i.e 56
             linkedList.pop();
             linkedList.show();
+
+
+            //Deleting the last element from linkedlist2 70
+            linkedList2.popLast();
+            linkedList2.show();
         }
     }
 }

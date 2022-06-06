@@ -76,6 +76,28 @@ namespace LinkedList_Day_14
             }
         }
 
+
+        //Deleting Last element from the linkedlist
+        public void popLast()
+        {
+            Node<T> temp = head;
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                while (temp.next != tail)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                tail = temp;
+            }
+        }
+
+
+        //Printing the values in the linked list
         public void show()
         {
             Node<T> temp = head;
